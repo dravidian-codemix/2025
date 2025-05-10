@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dates | Dravidian 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<header class="navbar">
+<header class="navbar">
+    <div class="container navbar-container">
+      <div class="brand">
+        <img src="images/dravidian-code-mixed-logo.png" alt="DravidianCodeMix Logo" class="logo-img" />
+        <h1 class="site-title">DravidianCodeMix 2025</h1>
+      </div> 
+    <nav class="nav-menu">
+      <a href="overview.html">Overview</a>
+      <a href="keynote.html">Keynote</a>
+      <a href="dataset.html">Dataset</a>
+      <a href="dates.html">Timeline</a>
+      <a href="organizers.html">Organizers</a>
+      <a href="submission.html">Submission</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Previous Year</a>
+        <div class="dropdown-content">
+          <a href="https://dravidian-codemix.github.io/2020/">2020</a>
+          <a href="https://dravidian-codemix.github.io/2021/index.html">2021</a>
+          <a href="https://sites.google.com/view/dravidiancodemix-2022/home?authuser=0">2022</a>
+          <a href="https://sites.google.com/view/dravidian-codemix-fire-2023/home?authuser=0">2023</a>
+          <a href="https://sites.google.com/view/dravidian-codemix-fire2024/home">2024</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<body>
+  <div class="custom-timeline-wrapper">
+    <div class="timeline-container">
+      <h2>Timeline</h2>
+      <div class="timeline-legend">
+        <span class="legend-item past">Past Events</span>
+        <span class="legend-item upcoming">Next Upcoming Events</span>
+        <span class="legend-item next-up">Upcoming Events</span>
+      </div>           
+      <ul class="timeline">
+        <li data-date="2025-05-10">2025-05-10 Open track websites and training data release</li>
+        <li data-date="2025-06-15">2025-06-15 Test data release</li>
+        <li data-date="2025-06-30">Run submission deadline</li>
+        <li data-date="2025-07-15">Results declared</li>
+        <li data-date="2025-08-30">Working notes due</li>
+        <li data-date="2025-09-30">Camera ready copies of working notes and overview paper due</li>
+        <li data-date="2025-12-01">Tentatively December 2025</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    const today = new Date();
+    const items = Array.from(document.querySelectorAll('.custom-timeline-wrapper .timeline li'));
+    const upcomingItems = [];
+  
+    items.forEach(item => {
+      const itemDate = new Date(item.dataset.date);
+      if (itemDate < today) {
+        item.classList.add('past');
+      } else {
+        item.classList.add('upcoming');
+        upcomingItems.push({ element: item, date: itemDate });
+      }
+    });
+  
+    // Find the nearest upcoming item and add 'next-up' class
+    if (upcomingItems.length > 0) {
+      const nearest = upcomingItems.reduce((a, b) => a.date < b.date ? a : b);
+      nearest.element.classList.remove('upcoming'); // Remove red
+      nearest.element.classList.add('next-up');     // Add distinct color
+    }
+  </script>
+  
+</body>
+<footer class="footer">
+  <div class="container footer-container">
+    <!-- Logos -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <!-- Emails -->
+        <div class="footer-emails">
+          <p>Email:</p>
+          <a href="mailto:dravidiancodemixed@gmail.com">dravidiancodemixed@gmail.com</a> |
+          <a href="mailto:bharathiraja.akr@gmail.com">bharathiraja.akr@gmail.com</a>
+        </div>
+
+        <!-- Logos -->
+        <div class="footer-logos">
+          <img id="logo1" src="images/insight-logo.jpeg" alt="Logo 1" />
+          <img id="logo2" src="images/sfi-logo.svg" alt="Logo 2" />
+          <img id="logo3" src="images/iiitmk.jpeg" alt="Logo 3" />
+          <img id="logo4" src="images/Cardiff_University_logo_logotype-700x673.png" alt="Logo 4" />
+        </div>
+
+        <!-- Copyright -->
+        <p class="footer-copy">
+          © 2025 DravidianCodeMix Track. All rights reserved.
+        </p>
+      </div>
+    </footer>
+</footer>
+</body></html>
