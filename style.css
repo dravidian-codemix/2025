@@ -885,19 +885,30 @@ body, html {
 
   .nav-menu a,
   .nav-menu .dropbtn {
+    display: block;
     width: 100%;
     padding: 12px 15px;
     text-align: left;
+    background-color: #f9f9f9;
+    color: #333;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    text-decoration: none;
   }
 
   .dropdown-content {
     position: static;
     box-shadow: none;
-    border-radius: 0;
     width: 100%;
+    border-top: 1px solid #ddd;
+    background-color: #f0f0f0;
   }
 
-  /* Footer stacking */
+  .dropdown-content a {
+    padding-left: 25px;
+  }
+
   .footer-container {
     flex-direction: column;
     align-items: center;
