@@ -679,151 +679,244 @@ body {
     text-decoration: underline;
   }
   /* --- Mobile Responsiveness Enhancer --- */
-@media (max-width: 768px) {
-  /* -------- NAVBAR FIX -------- */
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ccc;
-  }
-
-  .nav-menu a,
-  .nav-menu .dropbtn {
-    text-decoration: none !important;
-    border: none !important;
-    background: none !important;
-    color: #333;
-    padding: 12px 16px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    font-weight: 500;
-    text-align: left;
-  }
-
-  .nav-menu a:hover,
-  .nav-menu .dropbtn:hover {
-    background-color: #e0e0e0;
-  }
-
-  .dropdown {
-    width: 100%;
-  }
-
-  .dropdown-content {
-    display: none;
-    flex-direction: column;
-    position: static;
-    background-color: #f8f8f8;
-    width: 100%;
-    border-top: 1px solid #ddd;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: flex;
-  }
-
-  .dropdown-content a {
-    padding: 12px 16px;
-    color: #333;
-    text-decoration: none;
-    width: 100%;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #e0e0e0;
-  }
-
-  /* -------- FOOTER FIX -------- */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  .footer-emails {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-
-  .footer-emails a {
-    color: #333;
-    text-decoration: none;
-    word-break: break-word;
-  }
-
-  .footer-emails a:hover {
-    text-decoration: underline;
-  }
-
-  .footer-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-
-  .logo-box img {
-    max-width: 100px;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .footer-copy {
-    font-size: 13px;
-    color: #555;
-    margin-top: 10px;
-  }
-
-  /* Optional: space under content */
-  .dataset-section {
-    margin-top: 20px;
-  }
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-/* GLOBAL LAYOUT FIX */
+
 body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #222;
+  overflow-x: hidden;
 }
 
+/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
 }
+
+/* HEADER & NAVBAR */
+.navbar {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+}
+
+/* NAV MENU */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-menu a,
+.nav-menu .dropbtn {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu .dropbtn:hover {
+  background-color: #e0e0e0;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 100;
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  padding: 10px 16px;
+  display: block;
+  color: #222;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 30px 0 20px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Emails */
+.footer-emails {
+  flex: 1 1 250px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-emails p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer-emails a {
+  color: #222;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.footer-emails a:hover {
+  text-decoration: underline;
+}
+
+/* Logos */
+.footer-logos {
+  flex: 1 1 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo-box {
+  flex: 1 1 100px;
+  max-width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Copyright */
+.footer-copy {
+  flex-basis: 100%;
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+  font-size: 13px;
+  user-select: none;
+}
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
-  .container {
-    padding: 0 12px;
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+
+  .nav-menu a,
+  .nav-menu .dropbtn {
+    width: 100%;
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
     width: 100%;
   }
 
-  .navbar-container,
+  /* Footer stacking */
   .footer-container {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-emails {
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+  }
+
+  .footer-logos {
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer-copy {
+    margin-top: 15px;
   }
 }
