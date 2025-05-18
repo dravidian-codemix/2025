@@ -559,7 +559,15 @@ body {
   object-fit: contain;
   display: block;
 }
-
+.footer-logos img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  background-color: transparent;   /* Optional */
+  padding: 0;                      /* Ensure no padding */
+  margin: 0;                       /* Ensure no margin */
+}
 
   
   /* Copyright section */
