@@ -545,28 +545,24 @@ body {
   }
   
   /* Logos section */
-  .footer-logos {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;  /* Space between logos and copyright */
-  }
-  
-  /* Optional: limit logo size */
- .footer-logos img {
-  height: 50px;
-  width: auto;               /* Maintain aspect ratio */
-  object-fit: contain;
-  display: block;
+.footer-logos {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
 }
-.footer-logos img {
+
+.logo-box {
+  width: 100px;
   height: 50px;
-  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  display: block;
-  background-color: transparent;   /* Optional */
-  padding: 0;                      /* Ensure no padding */
-  margin: 0;                       /* Ensure no margin */
 }
 
   
