@@ -553,10 +553,13 @@ body {
   }
   
   /* Optional: limit logo size */
-  .footer-logos img {
-    max-height: 50px;
-    object-fit: contain;
-  }
+ .footer-logos img {
+  height: 50px;
+  width: auto;               /* Maintain aspect ratio */
+  object-fit: contain;
+  display: block;
+}
+
 
   
   /* Copyright section */
