@@ -884,31 +884,45 @@ body, html {
   }
 
   .nav-menu a,
-  .nav-menu .dropbtn {
+  .dropbtn {
     display: block;
     width: 100%;
     padding: 12px 15px;
     text-align: left;
-    background-color: #f9f9f9;
+    background-color: transparent;
     color: #333;
+    text-decoration: none;
     border: none;
     font-size: 1rem;
     font-family: inherit;
-    text-decoration: none;
+  }
+
+  .dropdown {
+    width: 100%;
   }
 
   .dropdown-content {
     position: static;
-    box-shadow: none;
+    display: none; /* Optional: hide by default */
     width: 100%;
-    border-top: 1px solid #ddd;
+    box-shadow: none;
     background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block; /* Optional: show on hover for mobile testing */
   }
 
   .dropdown-content a {
-    padding-left: 25px;
+    display: block;
+    padding: 12px 25px;
+    text-align: left;
+    color: #333;
+    text-decoration: none;
   }
 
+  /* Footer stacking */
   .footer-container {
     flex-direction: column;
     align-items: center;
