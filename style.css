@@ -795,3 +795,35 @@ body {
     margin-top: 20px;
   }
 }
+/* GLOBAL LAYOUT FIX */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 12px;
+    width: 100%;
+  }
+
+  .navbar-container,
+  .footer-container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
