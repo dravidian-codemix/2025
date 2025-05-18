@@ -680,119 +680,72 @@ body {
   }
   /* --- Mobile Responsiveness Enhancer --- */
 @media (max-width: 768px) {
+  /* Stack navbar items vertically */
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Mobile nav menu layout */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #111; /* Match your navbar bg */
+  }
+
   .nav-menu a,
   .nav-menu .dropbtn {
     text-decoration: none !important;
     border: none !important;
-    border-bottom: none !important;
     background: none !important;
-    color: #fff; /* or adjust based on your navbar color */
+    color: white;
     padding: 12px 16px;
     display: block;
     width: 100%;
     box-sizing: border-box;
     font-weight: 500;
+    text-align: left;
   }
 
   .nav-menu a:hover,
   .nav-menu .dropbtn:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* subtle hover */
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
-  /* Dropdown cleanup */
-  .dropdown-content {
-    background-color: #222; /* or match your nav bg */
-    border-radius: 0;
-    box-shadow: none;
+  /* Dropdown fixes */
+  .dropdown {
     width: 100%;
+  }
+
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: static;
+    background-color: #111;
+    width: 100%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
   }
 
   .dropdown-content a {
-    color: #fff;
-    text-decoration: none !important;
     padding: 12px 16px;
-    display: block;
+    color: white;
+    text-decoration: none;
     width: 100%;
+    display: block;
   }
 
   .dropdown-content a:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
 
-  /* Optional: fix misaligned dropdowns */
-  .dropdown {
-    width: 100%;
-  }
-
-  .dropdown .dropbtn {
-    width: 100%;
-    text-align: left;
+  /* Fix spacing under navbar */
+  .dataset-section {
+    margin-top: 20px;
   }
 }
-
-  /* Navbar tweaks */
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-  }
-
-  .nav-menu a {
-    padding: 10px;
-    display: block;
-    width: 100%;
-    text-align: left;
-    border-top: 1px solid #444;
-  }
-
-  .dropdown-content {
-    position: static;
-    width: 100%;
-  }
-
-  /* Table responsiveness */
-  .dataset-table {
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  /* Footer tweaks */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-logos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo-box img {
-    max-width: 80%;
-    height: auto;
-  }
-
-  /* Image scaling */
-  .logo-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Heading scaling */
-  h1.site-title {
-    font-size: 1.5rem;
-  }
-
-  h2, h3 {
-    font-size: 1.25rem;
-  }
-}
-  
