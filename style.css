@@ -763,6 +763,384 @@ display: block;
     border-left-color: #084298; /* dark blue */
     font-weight: bold;
   }
+   /* Overview Section */
+  #overview {
+    background-color: #ffffff;
+  }
+  
+  #overview p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #4b5563;
+  }
+  
+  /* Keynote Section */
+  #keynote {
+    background-color: #f3f4f6;
+  }
+  
+  #keynote p {
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  #keynote strong {
+    font-weight: bold;
+  }
+  
+  /* Dataset Section */
+  #dataset {
+    background-color: #ffffff;
+  }
+  
+  #dataset a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  
+  #dataset a:hover {
+    text-decoration: none;
+  }
+  
+  /* Dates Section */
+  #dates {
+    background-color: #f3f4f6;
+  }
+  
+  #dates ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  #dates li {
+    font-size: 1rem;
+    color: #374151;
+  }
+  
+  /* Organizers Section */
+  #organizers {
+    background-color: #ffffff;
+  }
+  
+  #organizers .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    #organizers .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  #organizers .card {
+    background-color: #f3f4f6;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #organizers .card h4 {
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  #organizers .card p {
+    color: #6b7280;
+  }
+  
+  /* Proceedings Section */
+  #proceedings {
+    background-color: #f3f4f6;
+  }
+  
+  #proceedings p {
+    font-size: 1rem;
+    color: #374151;
+  }
+  
+  /* About Section */
+  #dravidian {
+    background-color: #ffffff;
+  }
+  
+  #dravidian p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #4b5563;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #f3f4f6;
+  }
+  
+  #contact a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  
+  #contact a:hover {
+    text-decoration: none;
+  }
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .site-title {
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+  }
+  .track-description {
+    padding: 20px 0; /* Reduced vertical padding */
+    background-color: #f9f9f9;
+  }
+  
+  .track-description .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .track-description h2 {
+    font-size: 2em;
+    margin: 0 0 16px 0; /* Top margin removed, bottom margin set */
+    color: #333;
+  }
+  
+  .track-description p {
+    line-height: 1.6;
+    margin: 0 0 16px 0; /* Top margin removed, bottom margin set */
+    color: #555;
+  }
+  
+  .track-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 0 16px 0; /* Top margin removed, bottom margin set */
+  }
+  
+  .track-description li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  .dataset-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .dataset-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .dataset-section h2,
+  .dataset-section h3 {
+    font-size: 1.8em;
+    margin: 0 0 16px 0;
+    color: #333;
+  }
+  
+  .dataset-section p {
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    color: #555;
+  }
+  
+  .dataset-section pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+    margin: 0 0 16px 0;
+  }
+  
+  .dataset-section code {
+    font-family: monospace;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  .dataset-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+  }
+  
+  .dataset-table th,
+  .dataset-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .dataset-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .dataset-section a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .dataset-section a:hover {
+    text-decoration: underline;
+  }
+  .custom-timeline-wrapper {
+    padding: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  .custom-timeline-wrapper .timeline-container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  }
+  
+  .custom-timeline-wrapper h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .custom-timeline-wrapper .timeline {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .custom-timeline-wrapper .timeline li {
+    flex: 1 1 45%;
+    padding: 15px;
+    border-left: 6px solid transparent;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #e0e0e0;
+    transition: 0.3s;
+  }
+  
+  .custom-timeline-wrapper .timeline li.past {
+    background-color: #d1e7dd;
+    border-left-color: #198754;
+  }
+  
+  .custom-timeline-wrapper .timeline li.upcoming {
+    background-color: #f8d7da;
+    border-left-color: #dc3545;
+  }
+  
+  .custom-timeline-wrapper .timeline li:hover {
+    transform: scale(1.02);
+  }
+  .custom-timeline-wrapper .timeline li.next-up {
+    background-color: #cfe2ff; /* light blue */
+    border-left-color: #084298; /* dark blue */
+    font-weight: bold;
+  }
+  /* Organizer Section Styles */
+  /* Organizer Section Styles */
+#organizers {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  #organizers h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  #organizers ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #organizers li {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  #organizers li:hover {
+    transform: translateY(-5px);
+  }
+  
+  #organizers img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+  }
+  
+  #organizers a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0066cc;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  #organizers a:hover {
+    color: #004b99;
+    text-decoration: underline;
+  }
+  
+  #organizers small {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .coming-soon {
+    background-color: #fef3c7; /* light amber */
+    padding: 6rem 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+  
+  .coming-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #b45309; /* dark amber */
+    margin-bottom: 1rem;
+  }
+  
+  .coming-subtitle {
+    font-size: 1.25rem;
+    color: #78350f;
+  }
 /* Organizers Grid on Mobile /
 #organizers ul {
 grid-template-columns: 1fr;
