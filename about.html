@@ -1,8 +1,9 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang='en'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <header class="navbar">
   <header class="navbar">
@@ -11,7 +12,10 @@
         <img src="images/dravidian-code-mixed-logo.png" alt="DravidianCodeMix Logo" class="logo-img" />
         <h1 class="site-title">DravidianCodeMix 2025</h1>
       </div> 
-    <nav class="nav-menu">
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    <nav class="nav-menu" id="navLinks">
       <a href="overview.html">Overview</a>
       <a href="keynote.html">Keynote</a>
       <a href="dataset.html">Dataset</a>
@@ -37,11 +41,16 @@
     <footer class="footer">
       <div class="container footer-container">
         <!-- Emails -->
-        <div class="footer-emails">
-          <p>Email:</p>
-          <a href="mailto:dravidiancodemixed@gmail.com">dravidiancodemixed@gmail.com</a> |
-          <a href="mailto:bharathiraja.akr@gmail.com">bharathiraja.akr@gmail.com</a>
-        </div>
+            <div class="footer-emails">
+              <p>Email:</p>
+              <p>
+                <i class="fa-solid fa-envelope" style="color: #d93025;"></i>
+                <a href="mailto:dravidiancodemixed@gmail.com">dravidiancodemixed@gmail.com</a>
+                |
+                <i class="fa-solid fa-envelope" style="color: #d93025;"></i>
+                <a href="mailto:bharathiraja.akr@gmail.com">bharathiraja.akr@gmail.com</a>
+              </p>
+            </div>
 
         <!-- Logos -->
        <div class="footer-logos">
@@ -51,7 +60,6 @@
   <div class="logo-box"><img src="images/Yenepoya.png" alt="Logo 4" /></div>
 </div>
 
-
         <!-- Copyright -->
         <p class="footer-copy">
           © 2025 DravidianCodeMix Track. All rights reserved.
@@ -59,4 +67,10 @@
       </div>
     </footer>
 </footer>
+<script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+  </script>
 </body></html>
