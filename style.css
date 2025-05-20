@@ -10,7 +10,7 @@ body {
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;f
+    padding: 1rem;
   }
   
   /* Navbar */
@@ -872,76 +872,34 @@ body, html {
   .navbar-container {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
   }
 
   .nav-menu {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
+    padding-top: 0.5rem;
   }
 
   .nav-menu a,
   .dropbtn {
-    display: block;
+    margin: 0.25rem 0;
     width: 100%;
-    padding: 12px 15px;
     text-align: left;
-    background-color: transparent;
-    color: #333;
-    text-decoration: none;
-    border: none;
-    font-size: 1rem;
-    font-family: inherit;
-  }
-
-  .dropdown {
-    width: 100%;
+    padding: 0.5rem 1rem;
   }
 
   .dropdown-content {
     position: static;
-    display: none; /* Optional: hide by default */
     width: 100%;
     box-shadow: none;
-    background-color: #f0f0f0;
-    border-top: 1px solid #ddd;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block; /* Optional: show on hover for mobile testing */
   }
 
   .dropdown-content a {
-    display: block;
-    padding: 12px 25px;
-    text-align: left;
-    color: #333;
-    text-decoration: none;
+    padding-left: 2rem; /* Indent sub-items */
   }
 
-  /* Footer stacking */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-emails {
-    flex-direction: column;
-    gap: 6px;
-    margin-bottom: 15px;
-  }
-
-  .footer-logos {
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 15px;
-  }
-
-  .footer-copy {
-    margin-top: 15px;
+  .dropdown:hover .dropdown-content {
+    display: block; /* Ensure it expands on tap */
   }
 }
