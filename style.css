@@ -544,8 +544,9 @@ body {
 }
 
 .footer-logos img {
-  max-height: 60px;   /* set uniform max height for all logos */
-  width: auto;        /* maintain aspect ratio */
+  max-height: 60px;
+  min-height: 60px;    /* Ensures all logos are at least 60px tall */
+  width: auto;
   object-fit: contain;
 }
 
@@ -560,12 +561,6 @@ body {
   .footer-logos img {
     max-height: 50px;  /* reduce logo size a bit on mobile */
   }
-}
-
-.footer-logos .logo-box:last-child img {
-  width: 100px;    /* Adjust as needed */
-  height: auto;
-  object-fit: contain;
 }
   
   /* Copyright section */
