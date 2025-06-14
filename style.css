@@ -562,6 +562,11 @@ body {
   }
 }
 
+.footer-logos .logo-box:last-child img {
+  width: 100px;    /* Adjust as needed */
+  height: auto;
+  object-fit: contain;
+}
   
   /* Copyright section */
  .footer-copy {
