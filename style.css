@@ -550,6 +550,13 @@ body {
   object-fit: contain;
 }
 
+.footer-logos img[alt="Logo 4"] {
+  max-height: 60px;
+  min-height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Responsive: on small screens, stack logos vertically */
 @media (max-width: 480px) {
   .footer-logos {
