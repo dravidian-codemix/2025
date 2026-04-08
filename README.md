@@ -1,4 +1,4 @@
-# DravidianCodeMix 2025
+# [DravidianCodeMix 2025](https://dravidian-codemix.github.io/2025/) @ [FIRE 2025](https://fire.irsi.org.in/fire/2025/home)
 
 **Offensive Language Identification in Dravidian Code-Mixed Languages**
 
@@ -14,17 +14,6 @@ Code-mixing is common in multilingual communities, and standard monolingual NLP 
 - **Not in Target Language (NT)** – Content not in the target Dravidian language.
 
 This is notably the **first shared task on offensive language detection in Tulu**.
-
-## Timeline
-
-| Milestone | Date |
-|---|---|
-| Track website & training data release | 2025-05-10 |
-| Test data release | 2025-06-15 |
-| Run submission deadline | 2025-06-30 |
-| Results declared | 2025-07-15 |
-| Working notes due | 2025-09-05 |
-| Workshop | December 2025 (tentative) |
 
 ## Repository Structure
 
@@ -61,10 +50,12 @@ This is notably the **first shared task on offensive language detection in Tulu*
 
 ## Affiliated Institutions
 
-- University of Galway, Ireland
-- Sri Sivasubramaniya Nadar College of Engineering
-- SRM Institute of Science and Technology
-- Yenepoya (Deemed to be University)
+<p align="center">
+  <img src="images/university_of_galway.png" alt="University of Galway" height="80" />&nbsp;&nbsp;&nbsp;
+  <img src="images/Sri_Sivasubramaniya_Nadar_College_of_Engineering.svg.png" alt="SSN College of Engineering" height="80" />&nbsp;&nbsp;&nbsp;
+  <img src="images/SRM_Institute_of_Science_and_Technology_Logo.svg.png" alt="SRM Institute of Science and Technology" height="80" />&nbsp;&nbsp;&nbsp;
+  <img src="images/Yenepoya.png" alt="Yenepoya University" height="80" />
+</p>
 
 ---
 
